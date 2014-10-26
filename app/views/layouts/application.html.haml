@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Romantic
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #nx-page
+      #nx-header
+        = render 'layouts/shared/header'
+      #nx-middle
+        = render 'layouts/shared/mid'
+        = render 'layouts/shared/banner_slide'
+      #nx-container
+        = render 'layouts/shared/slide_product'
+      #nx-container-bottom
+        = render 'layouts/shared/left_menu'
+        = yield
+      = render 'layouts/shared/bottom'
+      = render 'layouts/shared/footer'

@@ -1,0 +1,33 @@
+#nx-content
+  .clear-fix
+  .nx-component
+    #system-message-container
+    .nx-login
+      %h4.nx-category-title
+        %span
+          %span Login
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do
+        %fieldset
+          .nx-login-fields
+            %label#username-lbl{:for => "user_email"} Email
+            %input#user_email.validate-username{:name => "user[email]", :size => "25", :type => "email", :value => ""}/
+          .nx-login-fields
+            %label#password-lbl{:for => "user_password"} Password
+            %input#user_password.validate-password{:name => "user[password]", :size => "25", :type => "password", :value => ""}/
+          .nx-login-fields
+            %label#nx-remember-lbl{:for => "user_remember_me"} Remember me
+            %input#nx-remember.user_remember_me{:alt => "Remember me", :name => "user[remember_me]", :type => "checkbox", :value => "yes"}/
+          %button.nx-button{:name => "commit", :type => "submit"} Log in
+         
+        .nx-user-account
+          %ul
+            %li
+              %a{:href => "/"}
+                Forgot your password?
+            %li
+              %a{:href => "/"}
+                Forgot your username?
+            %li
+              %a{:href => "/"}
+                Don't have an account?
+

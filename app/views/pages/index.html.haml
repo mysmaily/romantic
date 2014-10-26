@@ -1,0 +1,197 @@
+#nx-content
+  .nx-content-top
+    .moduletable
+      %h3 WELL COME TO OUR SITE!
+      .custom
+        .content-leading
+          %img{:alt => "leading", :border => "0", :src => "/vmdemo/bakerymart/images/content-leading.jpg"}/
+          %p.intro At Aroma we believe that bread should always be healthy and natural. That's why our delicious breads are baked fresh every day using a sourdough base with no added sugar, preservatives or cholesterol. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor vitae nibh condimen.
+        .content-items-1
+          %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/birthday-cake.jpg"}/
+          %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
+          %p.read-more
+            %a{:href => "/vmdemo/bakerymart/index.php/retail-franchisee"} Read More
+        .content-items-2
+          %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/stollen.jpg"}/
+          %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
+          %p.read-more
+            %a{:href => "/vmdemo/bakerymart/index.php/manufacturing"} Read More
+        .content-items-3
+          %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/all-taste.jpg"}/
+          %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
+          %p.read-more
+            %a{:href => "/vmdemo/bakerymart/index.php/affiliate-program"} Read More
+  .clear-fix
+  .nx-component
+    #system-message-container
+    .nx-latest-view
+      %h2.nx-latest-title.nx-title WHAT NEW ON SHOP?
+      %ul#nx-items1
+    .nx-topten-view
+      %h2.nx-topten-title.nx-title NEW PRODUCTIONS!
+      %ul#nx-items2
+        %li
+          %img.nx-topten-image{:src => "/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images//new-product.png"}/
+          .nx-topten-product-picture
+            %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/variety-sspecial-tin-detail"}
+              %img.featuredProductImage{:alt => "croissants_med7", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/croissants_med7_200x150.jpg"}/
+          .nx-topten-product-info
+            .nx-topten-product-link
+              %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/variety-sspecial-tin-detail", :title => "Variety Sspecial Tin"} Variety Sspecial Tin
+            .nx-product-sdec
+              %p
+                It's hard to choose between our two pound Blueberry, Cinnamon Walnut or Chocolate Chip...
+            .nx-topten-product-price
+              .PricevariantModification{:style => "display : none;"}
+                Variant price modifier:
+                %span.PricevariantModification
+              .PricebasePriceWithTax{:style => "display : none;"}
+                Base price with tax:
+                %span.PricebasePriceWithTax
+              .PricediscountedPriceWithoutTax{:style => "display : block;"}
+                Price with discount:
+                %span.PricediscountedPriceWithoutTax $31.50
+              .PricesalesPriceWithDiscount{:style => "display : none;"}
+                Salesprice with discount:
+                %span.PricesalesPriceWithDiscount
+              .PricesalesPrice{:style => "display : block;"}
+                \&nbsp;
+                %span.PricesalesPrice $31.50
+              .PricepriceWithoutTax{:style => "display : block;"}
+                \&nbsp;
+                %span.PricepriceWithoutTax $31.50
+              .PricetaxAmount{:style => "display : none;"}
+                Tax amount:
+                %span.PricetaxAmount
+            .nx-addtocart-area
+              %form.product.js-recalculate{:action => "index.php", :method => "post"}
+                .addtocart-bar
+                  %label.quantity_box{:for => "quantity"}
+                  %span.quantity-box
+                    %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                  %span.quantity-controls
+                    %input.quantity-controls.quantity-minus{:type => "button"}/
+                    %br/
+                    %input.quantity-controls.quantity-plus{:type => "button"}/
+                  %span.addtocart-button
+                    %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                  .clear
+                %input.pname{:type => "hidden", :value => "Variety Sspecial Tin"}/
+                %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                %input{:name => "view", :type => "hidden", :value => "cart"}/
+                %noscript &lt;input type="hidden" name="task" value="add" /&gt;
+                %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "3"}/
+                %input{:name => "virtuemart_manufacturer_id", :type => "hidden", :value => "4"}/
+                %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+              .clear
+          %div{:style => "clear: both;"}
+        %li
+          %img.nx-topten-image{:src => "/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images//new-product.png"}/
+          .nx-topten-product-picture
+            %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/locarb-flourless-marble-detail"}
+              %img.featuredProductImage{:alt => "sugar-free_lo-carb_flourless_marble_cake_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/sugar-free_lo-carb_flourless_marble_cake_med_200x150.jpg"}/
+          .nx-topten-product-info
+            .nx-topten-product-link
+              %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/locarb-flourless-marble-detail", :title => "Locarb Flourless Marble"} Locarb Flourless Marble
+            .nx-product-sdec
+              %p
+                A sure hit with everyone for every situation. Perfect for welcoming a new neighbor,...
+            .nx-topten-product-price
+              .PricevariantModification{:style => "display : none;"}
+                Variant price modifier:
+                %span.PricevariantModification
+              .PricebasePriceWithTax{:style => "display : none;"}
+                Base price with tax:
+                %span.PricebasePriceWithTax
+              .PricediscountedPriceWithoutTax{:style => "display : block;"}
+                Price with discount:
+                %span.PricediscountedPriceWithoutTax $43.20
+              .PricesalesPriceWithDiscount{:style => "display : none;"}
+                Salesprice with discount:
+                %span.PricesalesPriceWithDiscount
+              .PricesalesPrice{:style => "display : block;"}
+                \&nbsp;
+                %span.PricesalesPrice $43.20
+              .PricepriceWithoutTax{:style => "display : block;"}
+                \&nbsp;
+                %span.PricepriceWithoutTax $43.20
+              .PricetaxAmount{:style => "display : none;"}
+                Tax amount:
+                %span.PricetaxAmount
+            .nx-addtocart-area
+              %form.product.js-recalculate{:action => "index.php", :method => "post"}
+                .addtocart-bar
+                  %label.quantity_box{:for => "quantity"}
+                  %span.quantity-box
+                    %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                  %span.quantity-controls
+                    %input.quantity-controls.quantity-minus{:type => "button"}/
+                    %br/
+                    %input.quantity-controls.quantity-plus{:type => "button"}/
+                  %span.addtocart-button
+                    %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                  .clear
+                %input.pname{:type => "hidden", :value => "Locarb Flourless Marble"}/
+                %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                %input{:name => "view", :type => "hidden", :value => "cart"}/
+                %noscript &lt;input type="hidden" name="task" value="add" /&gt;
+                %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "19"}/
+                %input{:name => "virtuemart_manufacturer_id", :type => "hidden", :value => "6"}/
+                %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "3"}/
+              .clear
+          %div{:style => "clear: both;"}
+        %li
+          %img.nx-topten-image{:src => "/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images//new-product.png"}/
+          .nx-topten-product-picture
+            %a{:href => "/vmdemo/bakerymart/index.php/soups-and-salads/linzer-heart-cookies-detail"}
+              %img.featuredProductImage{:alt => "linzer_heart_cookies_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/linzer_heart_cookies_med_200x150.jpg"}/
+          .nx-topten-product-info
+            .nx-topten-product-link
+              %a{:href => "/vmdemo/bakerymart/index.php/soups-and-salads/linzer-heart-cookies-detail", :title => "Linzer Heart Cookies"} Linzer Heart Cookies
+            .nx-product-sdec
+              %p
+                We now offer Coffee Cake Combos to make your decision a little easier.
+            .nx-topten-product-price
+              .PricevariantModification{:style => "display : none;"}
+                Variant price modifier:
+                %span.PricevariantModification
+              .PricebasePriceWithTax{:style => "display : none;"}
+                Base price with tax:
+                %span.PricebasePriceWithTax
+              .PricediscountedPriceWithoutTax{:style => "display : block;"}
+                Price with discount:
+                %span.PricediscountedPriceWithoutTax $18.00
+              .PricesalesPriceWithDiscount{:style => "display : none;"}
+                Salesprice with discount:
+                %span.PricesalesPriceWithDiscount
+              .PricesalesPrice{:style => "display : block;"}
+                \&nbsp;
+                %span.PricesalesPrice $20.00
+              .PricepriceWithoutTax{:style => "display : block;"}
+                \&nbsp;
+                %span.PricepriceWithoutTax $18.00
+              .PricetaxAmount{:style => "display : none;"}
+                Tax amount:
+                %span.PricetaxAmount
+            .nx-addtocart-area
+              %form.product.js-recalculate{:action => "index.php", :method => "post"}
+                .addtocart-bar
+                  %label.quantity_box{:for => "quantity"}
+                  %span.quantity-box
+                    %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                  %span.quantity-controls
+                    %input.quantity-controls.quantity-minus{:type => "button"}/
+                    %br/
+                    %input.quantity-controls.quantity-plus{:type => "button"}/
+                  %span.addtocart-button
+                    %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                  .clear
+                %input.pname{:type => "hidden", :value => "Linzer Heart Cookies"}/
+                %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                %input{:name => "view", :type => "hidden", :value => "cart"}/
+                %noscript &lt;input type="hidden" name="task" value="add" /&gt;
+                %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "35"}/
+                %input{:name => "virtuemart_manufacturer_id", :type => "hidden", :value => "4"}/
+                %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "5"}/
+              .clear
+          %div{:style => "clear: both;"}

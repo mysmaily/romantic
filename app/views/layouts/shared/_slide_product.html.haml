@@ -1,0 +1,733 @@
+.nx-featured-products
+  :javascript
+    jQuery(document).ready(function() {
+        jQuery('#product-carousel-featured').jcarousel();
+    });
+  .nx-featured
+    .jcarousel-skin-tango
+      .jcarousel-container.jcarousel-container-horizontal{:style => "position: relative; display: block;"}
+        .jcarousel-clip.jcarousel-clip-horizontal{:style => "position: relative;"}
+          %ul#product-carousel-featured.jcarousel-list.jcarousel-list-horizontal{:style => "overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 3088px;"}
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-1.jcarousel-item-1-horizontal{:jcarouselindex => "1", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/cookies/sugar-free-chocolate-detail", :title => "Sugar Free Chocolate"}
+                  %img.featuredProductImage{:alt => "sugar_free_chocolate_chip_cookies_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/sugar_free_chocolate_chip_cookies_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/cookies/sugar-free-chocolate-detail"} Sugar Free Chocolate
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $38.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "36"} Chocolate
+                            %option{:value => "39"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "37"} No
+                            %option{:value => "38"} Yes
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "40"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity18" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Sugar Free Chocolate"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "18"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "4"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-2.jcarousel-item-2-horizontal{:jcarouselindex => "2", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/lemon-lulu-cake-detail", :title => "Lemon LuLu Cake"}
+                  %img.featuredProductImage{:alt => "lemon_lulu_cake_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/lemon_lulu_cake_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/lemon-lulu-cake-detail"} Lemon LuLu Cake
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $38.70
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "76"} Coffee
+                            %option{:value => "77"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "78"} Yes
+                            %option{:value => "79"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "80"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity13" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Lemon LuLu Cake"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "13"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "3"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-3.jcarousel-item-3-horizontal{:jcarouselindex => "3", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/artisan-maple-oat-detail", :title => "Artisan Maple Oat"}
+                  %img.featuredProductImage{:alt => "gourmet_bakery_assortment_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/gourmet_bakery_assortment_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/artisan-maple-oat-detail"} Artisan Maple Oat
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $35.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "92"} Chocolate
+                            %option{:value => "93"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "94"} Yes
+                            %option{:value => "95"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "96"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity10" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Artisan Maple Oat"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "10"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-4.jcarousel-item-4-horizontal{:jcarouselindex => "4", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/raisin-detail", :title => "Raisin"}
+                  %img.featuredProductImage{:alt => "gluten_free_choc_chip_cookie_med3", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/gluten_free_choc_chip_cookie_med3_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/raisin-detail"} Raisin
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $22.50
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "123"} Chocolate
+                            %option{:value => "124"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "125"} Yes
+                            %option{:value => "126"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "127"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity4" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Raisin"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "4"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-5.jcarousel-item-5-horizontal{:jcarouselindex => "5", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/sweet-breakfast-detail", :title => "Sweet Breakfast"}
+                  %img.featuredProductImage{:alt => "chocolate_caramel_pecan_cheesecake_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/chocolate_caramel_pecan_cheesecake_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/sweet-breakfast-detail"} Sweet Breakfast
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $12.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "251"} Cherry
+                            %option{:value => "252"} Grapes
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "253"} Yes
+                            %option{:value => "254"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "255"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity34" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Sweet Breakfast"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "34"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-6.jcarousel-item-6-horizontal{:jcarouselindex => "6", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/banana-bread-detail", :title => "Banana bread"}
+                  %img.featuredProductImage{:alt => "chocolate_chip_coffee_cake_med13", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/chocolate_chip_coffee_cake_med13_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/new-product/banana-bread-detail"} Banana bread
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $18.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "147"} Chocolate
+                            %option{:value => "148"} Grapes
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "149"} No
+                            %option{:value => "150"} Yes
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "151"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity1" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Banana bread"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "1"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-7.jcarousel-item-7-horizontal{:jcarouselindex => "7", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/fasfood/crinkle-detail", :title => "Crinkle"}
+                  %img.featuredProductImage{:alt => "red_velvet_cake_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/red_velvet_cake_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/fasfood/crinkle-detail"} Crinkle
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $15.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice05{:name => "customPrice[0][5]"}
+                            %option{:value => "163"} No
+                            %option{:value => "164"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice14{:name => "customPrice[1][4]"}
+                            %option{:value => "165"} Chocolate
+                            %option{:value => "166"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "167"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity24" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Crinkle"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "24"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "2"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-8.jcarousel-item-8-horizontal{:jcarouselindex => "8", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/trophy-mousse-detail", :title => "Trophy Mousse"}
+                  %img.featuredProductImage{:alt => "trophy_mousse_cake_sampler_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/trophy_mousse_cake_sampler_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/trophy-mousse-detail"} Trophy Mousse
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $34.20
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "60"} Coffee
+                            %option{:value => "61"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "62"} Yes
+                            %option{:value => "63"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "64"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity15" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Trophy Mousse"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "15"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "3"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-9.jcarousel-item-9-horizontal{:jcarouselindex => "9", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/soups-and-salads/linzer-heart-cookies-detail", :title => "Linzer Heart Cookies"}
+                  %img.featuredProductImage{:alt => "linzer_heart_cookies_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/linzer_heart_cookies_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/soups-and-salads/linzer-heart-cookies-detail"} Linzer Heart Cookies
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $20.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "259"} Cherry
+                            %option{:value => "260"} Grapes
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "261"} Yes
+                            %option{:value => "262"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "263"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity35" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Linzer Heart Cookies"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "35"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "5"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-10.jcarousel-item-10-horizontal{:jcarouselindex => "10", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/cookies/pound-mini-bite-detail", :title => "Pound Mini Bite"}
+                  %img.featuredProductImage{:alt => "two_pound_mini_bite_cookies_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/two_pound_mini_bite_cookies_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/cookies/pound-mini-bite-detail"} Pound Mini Bite
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $35.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "44"} Coffee
+                            %option{:value => "45"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "46"} Yes
+                            %option{:value => "47"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "48"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity17" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Pound Mini Bite"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "17"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "4"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-11.jcarousel-item-11-horizontal{:jcarouselindex => "11", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/recipe-corner/bacca-montagnia-detail", :title => "Bacca Montagnia"}
+                  %img.featuredProductImage{:alt => "bacca_di_montagnia_cake_med1", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/bacca_di_montagnia_cake_med1_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/recipe-corner/bacca-montagnia-detail"} Bacca Montagnia
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $31.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "227"} Chocolate
+                            %option{:value => "228"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "229"} Yes
+                            %option{:value => "230"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "231"} Yes
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity32" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Bacca Montagnia"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "32"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "6"}/
+                  .clear
+            %li.nx-featured-products-items.jcarousel-item.jcarousel-item-horizontal.jcarousel-item-12.jcarousel-item-12-horizontal{:jcarouselindex => "12", :style => "float: left; list-style: none;"}
+              .nx-products-image
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/cookies-med-detail", :title => "Cookies Med"}
+                  %img.featuredProductImage{:alt => "happy_birthday_cookie_med", :border => "0", :src => "/vmdemo/bakerymart/images/stories/virtuemart/product/resized/happy_birthday_cookie_med_200x150.jpg"}/
+                .clear
+              %p.nx-title-product
+                %a{:href => "/vmdemo/bakerymart/index.php/products/cakes-candy/cookies-med-detail"} Cookies Med
+              .nx-price-product
+                .clear
+                .PricesalesPrice{:style => "display : block;"}
+                  %span.PricesalesPrice $30.00
+                .addtocart-area
+                  %form.product{:action => "index.php", :method => "post"}
+                    .product-fields
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Flavour
+                        %span.hasTip{:title => "Flavour::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice04{:name => "customPrice[0][4]"}
+                            %option{:value => "171"} Chocolate
+                            %option{:value => "172"} Cherry
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Piping/Decorations
+                        %span.hasTip{:title => "Piping/Decorations::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice15{:name => "customPrice[1][5]"}
+                            %option{:value => "173"} Yes
+                            %option{:value => "174"} No
+                        %span.product-field-desc
+                      .product-field.product-field-type-V{:style => "display:inline-block;"}
+                        %span.product-fields-title
+                          %b Sponge Type
+                        %span.hasTip{:title => "Sponge Type::"}
+                          %img{:alt => "Tooltip", :src => "/vmdemo/bakerymart/media/system/images/tooltip.png"}/
+                        %span.product-field-display
+                          %select#customPrice26{:name => "customPrice[2][6]"}
+                            %option{:value => "175"} Sponge Type
+                        %span.product-field-desc
+                    .addtocart-bar
+                      / <label for="quantity25" class="quantity_box">Quantity: </label>
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Cookies Med"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript &lt;input type="hidden" name="task" value="add"/&gt;
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "25"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "3"}/
+                  .clear
+          %br{:style => "clear:both;"}/
+        .jcarousel-prev.jcarousel-prev-horizontal.jcarousel-prev-disabled.jcarousel-prev-disabled-horizontal{:disabled => "disabled", :style => "display: block;"}
+        .jcarousel-next.jcarousel-next-horizontal{:style => "display: block;"}
