@@ -20,3 +20,11 @@ vn:
     login: "Đăng Nhập"
     remember_me: "Ghi nhớ"
     min_character: "Ký tự tối thiểu"
+  admin:
+    home: "Trang Chủ"
+    manage_product: "Quản lý sản phẩm"
+    product_list: "Danh mục sản phẩm"
+    manage_artile: "Quản lý bài viết"
+    add_product_category: "Thêm mới danh mục sản phẩm"
+    edit_product_category: "Sửa danh mục sản phẩm"
+    manage_product_category: "Quản lý danh mục sản phẩm"

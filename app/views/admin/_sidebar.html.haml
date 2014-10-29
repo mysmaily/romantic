@@ -33,17 +33,17 @@
     #list
       %ul#main-nav
         %li#arrayorder_1
-          %a.nav-top-item.no-submenu{:href => "/"} Trang chủ
+          %a.nav-top-item.no-submenu{:href => "/admin"} #{t('admin.home')}
         %li#arrayorder_2{:style => ""}
-          %a.nav-top-item.submenuheader{:href => "#"} Quản lý sản phẩm
+          %a.nav-top-item.submenuheader{:href => "#"} #{t('admin.manage_product')}
           .submenu
             %ul
               %li
-                %a{:href => admin_categories_path} Danh mục sản phẩm
+                %a{:href => admin_categories_path} #{t('admin.product_list')}
               %li
                 %a{:href => "#"} Danh sách sản phẩm
         %li#arrayorder_2
-          %a.nav-top-item.submenuheader{:href => "#"} Quản lý bài viết
+          %a.nav-top-item.submenuheader{:href => "#"} #{t('admin.manage_artile')}
           .submenu
             %ul
               %li

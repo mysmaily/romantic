@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   before_filter :query_data, :set_locale
 
   def query_data
-    @categories = Category.all
+    @categories = Category.where(published: true)
   end
 
   def set_locale

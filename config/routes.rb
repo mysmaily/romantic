@@ -13,6 +13,7 @@ Romantic::Application.routes.draw do
     resources :categories do
       put :set_published, on: :member
     end
+    match "category/delete_product/:id", to: "categories#delete_category", as: "delete_category"
   end
 
 

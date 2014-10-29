@@ -1,5 +1,5 @@
 #main-content
-  = render 'admin/top'
+  = render 'admin/top', :page_title => t("admin.manage_product_category")
   .content-box
     .content-box-header
       %table.timkiem
@@ -43,10 +43,10 @@
                 %td
                   = t.created_at
                 %td
-                  %a{:href => "http://longphung.vn/admin/catproducts/edit/268", :title => "Edit"}
-                    %img{:alt => "Edit", :src => "http://longphung.vn/admin/images/icons/pencil.png"}/
-                  %a{:href => "javascript:confirmDelete('http://longphung.vn/admin/catproducts/delete/268')", :title => "Delete"}
-                    %img{:alt => "Delete", :src => "http://longphung.vn/admin/images/icons/cross.png"}/
+                  = link_to edit_admin_category_path(t.id) do
+                    = image_tag "/assets/pencil.png"
+                  = link_to admin_delete_category_path(t.id), method: :delete do
+                    = image_tag "/assets/cross.png"
                 %td
                   = check_box_tag :published, t.id, t.published?, class: 'user-approve-cb'
                 %td{:align => "right"}

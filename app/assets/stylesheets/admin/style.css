@@ -836,10 +836,10 @@ div.pagetitle h2 {
     background-image: url(/assets/icons/icon-32-trash.png);
 }
 .icon-32-help {
-    background-image: url(/assets/icons/icon-32-help.png);
+    background-image: url("/assets/icon-32-help.png");
 }
 .icon-32-unpublish {
-    background-image: url(/assets/icons/icon-32-unpublish.png);
+    background-image: url("/assets/icon-32-unpublish.png");
 }
 .icon-32-cancel {
     background-image: url(/assets/icons/icon-32-cancel.png);
