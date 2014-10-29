@@ -5,38 +5,30 @@
     .nx-login
       %h4.nx-category-title
         %span
-          %h2 Sign up
+          %h2 #{t('front_login.sign_up')}
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         = devise_error_messages!
         %fieldset
           .nx-login-fields
-            %label#username-lbl{:for => "first_name"} First Name
+            %label#username-lbl{:for => "first_name"} #{t('front_login.first_name')}
             %input#first_name.validate-username{:name => "user[first_name]", :size => "25", :type => "text", :value => ""}/
           .nx-login-fields
-            %label#username-lbl{:for => "last_name"} Last Name
+            %label#username-lbl{:for => "last_name"} #{t('front_login.last_name')}
             %input#last_name.validate-username{:name => "user[last_name]", :size => "25", :type => "text", :value => ""}/
           .nx-login-fields
           .nx-login-fields
-            %label#username-lbl{:for => "user_email"} Email
+            %label#username-lbl{:for => "user_email"} #{t('front_login.email')}
             %input#user_email.validate-username{:name => "user[email]", :size => "25", :type => "email", :value => ""}/
           .nx-login-fields
-            %label#password-lbl{:for => "user_password"} Password
+            %label#password-lbl{:for => "user_password"} #{t('front_login.password')}
             %input#user_password.validate-password{:name => "user[password]", :size => "25", :type => "password", autocomplete: "off"}/
             - if @validatable
               %i
-                (#{@minimum_password_length} characters minimum)
+                (#{@minimum_password_length} #{t('front_login.min_character')})
           .nx-login-fields
-            %label#password-lbl{:for => "password_confirmation"} Password confirmation
+            %label#password-lbl{:for => "password_confirmation"} #{t('front_login.password_confirm')}
             %input#password_confirmation.validate-password{:name => "user[password_confirmation]", :size => "25", :type => "password", autocomplete: "off"}/
-          %button.nx-button{:name => "commit", :type => "submit"} Sign up
+          %button.nx-button{:name => "commit", :type => "submit"} #{t('front_login.sign_up')}
         .nx-user-account
           %ul
-            %li
-              %a{:href => "/"}
-                Forgot your password?
-            %li
-              %a{:href => "/"}
-                Forgot your username?
-            %li
-              %a{:href => "/"}
-                Don't have an account?
+            = render 'devise/shared/links'

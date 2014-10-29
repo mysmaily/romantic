@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141026160634) do
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20141029030502) do
+
+  create_table "categories", :force => true do |t|
+    t.string "name"
+    t.string "name_vn"
+=======
+ActiveRecord::Schema.define(:version => 20141028085655) do
+
+  create_table "categories", :force => true do |t|
+    t.string "name"
+>>>>>>> 14f13f8390f3016adb89e7ef7c1f1cb116cadb93
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

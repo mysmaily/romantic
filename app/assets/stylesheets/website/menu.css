@@ -31,18 +31,6 @@
 .dropdown-menu .menu-item.active {
     display: table-header-group;
 }
-.dropdown-menu .menu-item.active .menu-item-link:after {
-	width: 0; 
-	height: 0; 
-	content: "";
-	position: absolute;
-	top: 12px;
-	right: 8px;
-	border-top: 4px solid rgba(0, 0, 0, 1);    	
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
-	
-}
 .nx-user-menu>ul>li {
 	float: left;
 	border-right: 1px solid #666666;
@@ -150,7 +138,7 @@ h2.nx-title-left{
 }
 .nx-menu-left ul{list-style: none; margin: 13px 0}
 .nx-menu-left ul li{
-	background: url("../images/bg-menu-left.png") no-repeat center left;
+	background: url("/assets/bg-menu-left.png") no-repeat center left;
 	padding: 6px 18px;
 	border-bottom: 1px dashed #d7d7d7;
 }

@@ -11,9 +11,13 @@
         = render 'layouts/shared/header'
       #nx-middle
         = render 'layouts/shared/mid'
-        = render 'layouts/shared/banner_slide'
-      #nx-container
-        = render 'layouts/shared/slide_product'
+        -if params[:controller] == 'pages'
+          = render 'layouts/shared/banner_slide'
+        - else 
+          = render 'layouts/shared/sub_banner'
+      -if params[:controller] == 'pages'
+        #nx-container
+          = render 'layouts/shared/slide_product'
       #nx-container-bottom
         = render 'layouts/shared/left_menu'
         = yield
