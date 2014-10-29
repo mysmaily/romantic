@@ -6,6 +6,14 @@ Romantic::Application.routes.draw do
   get "pages/index"
 
   root to: 'pages#index'
+  namespace :admin do
+    get '', to: 'home#index', as: '/'
+    resources :products
+    resources :home, :only => [:index]
+    resources :categories do
+      put :set_published, on: :member
+    end
+  end
 
 
   # The priority is based upon order of creation:

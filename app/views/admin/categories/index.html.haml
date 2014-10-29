@@ -1,0 +1,65 @@
+#main-content
+  = render 'admin/top'
+  .content-box
+    .content-box-header
+      %table.timkiem
+        %tbody
+          %tr
+            %td{:valign => "top"} Tìm kiếm
+            %td
+              %input{:type => "text"}
+            %td
+              %input.button{:type => "button", :value => "Thêm mới"}/
+      %ul.content-box-tabs
+        %li
+          %a.default-tab{:href => "#tab1"} Danh sách tin
+        %li
+          %a{:href => "#tab2"}
+      .clear
+    .content-box-content
+      #tab1.tab-content.default-tab
+        %table
+          %thead
+            %tr
+              %th{:width => "7%"} STT
+              %th{:width => "7%"}
+              %th Tên danh mục
+              %th Cập nhật
+              %th{:width => "12%"} Xử lý
+              %th Hiển thị
+              %th{:width => "3%"} ID
+          %tfoot
+            %tr
+              %td{:colspan => "8"}
+          - i = 1
+          - @categories.each do |t|
+            %tbody
+              %tr
+                %td
+                  = "#{i}"
+                %td
+                %td 
+                  = t.name
+                %td
+                  = t.created_at
+                %td
+                  %a{:href => "http://longphung.vn/admin/catproducts/edit/268", :title => "Edit"}
+                    %img{:alt => "Edit", :src => "http://longphung.vn/admin/images/icons/pencil.png"}/
+                  %a{:href => "javascript:confirmDelete('http://longphung.vn/admin/catproducts/delete/268')", :title => "Delete"}
+                    %img{:alt => "Delete", :src => "http://longphung.vn/admin/images/icons/cross.png"}/
+                %td
+                  = check_box_tag :published, t.id, t.published?, class: 'user-approve-cb'
+                %td{:align => "right"}
+                  = t.id
+            - i = i + 1
+          :javascript
+            $('.user-approve-cb:checkbox').change(function() {
+              return $.ajax({
+                url: '/admin' + '/categories/' + this.value + '/set_published',
+                type: 'PUT',
+                data: { published: $(this).is(":checked") },
+                success: function() {
+                return ;
+                }
+              });
+            });

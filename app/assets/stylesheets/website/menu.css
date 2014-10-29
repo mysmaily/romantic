@@ -16,9 +16,8 @@
     display: none;
 }
 .dropdown-menu .menu-item-link {
-		height: 10px;
+		height: 100px;
     text-decoration: none;
-    vertical-align: middle;
     cursor: pointer;
 }
 .dropdown-menu:hover .menu-item {

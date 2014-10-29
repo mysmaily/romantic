@@ -46,10 +46,7 @@
         %ul.dropdown-menu
           %li.active.menu-item
             %a.menu-item-link
-              - if params[:lang] == 'en'
-                = t('english')
-              - if params[:lang] == 'vn'
-                = t('vietnam')
+              = "Languages"
           %li.menu-item
             %a.menu-item-link
               = link_to_unless I18n.locale == :vn, t('vietnam'), "?lang=vn"

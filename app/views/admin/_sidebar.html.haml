@@ -1,0 +1,103 @@
+:javascript
+  ddaccordion.init({
+      headerclass: "submenuheader",
+      contentclass: "submenu",
+      revealtype: "click",
+      mouseoverdelay: 200,
+      collapseprev: true,
+      defaultexpanded: [],
+      onemustopen: false,
+      animatedefault: false,
+      persiststate: false,
+      toggleclass: ["", ""],
+      animatespeed: "fast",
+      oninit:function(headers, expandedindices){
+      },
+      onopenclose:function(header, index, state, isuseractivated){
+      }
+  })
+#sidebar
+  #sidebar-wrapper
+    %h1#sidebar-title
+      %a{:href => "#"}
+    %a{:href => "/admin"}
+      %img#logo{:alt => "Design by Quảng cáo vip", :src => "http://longphung.vn/admin/images/logo.png"}/
+    #profile-links
+      Xin chào,
+      %a{:href => "#", :title => "Edit your profile"} admin
+      %br/
+      %br/
+      %a{:href => "/", :target => "_blank", :title => "View the Site"} Xem trang chủ
+      |
+      %a{:href => "/", :title => "Sign Out"} Thoát
+    #list
+      %ul#main-nav
+        %li#arrayorder_1
+          %a.nav-top-item.no-submenu{:href => "/"} Trang chủ
+        %li#arrayorder_2{:style => ""}
+          %a.nav-top-item.submenuheader{:href => "#"} Quản lý sản phẩm
+          .submenu
+            %ul
+              %li
+                %a{:href => admin_categories_path} Danh mục sản phẩm
+              %li
+                %a{:href => "#"} Danh sách sản phẩm
+        %li#arrayorder_2
+          %a.nav-top-item.submenuheader{:href => "#"} Quản lý bài viết
+          .submenu
+            %ul
+              %li
+                %a{:href => "#"} Danh mục bài viết
+              %li
+                %a{:href => "#"} Danh sách bài viết
+        %li#arrayorder_2
+          %a.nav-top-item.submenuheader{:href => "#"} Quản lý album ảnh
+          .submenu
+            %ul
+              %li
+                %a{:href => "#"} Danh mục album
+              %li
+                %a{:href => "#"} Danh sách ảnh
+        %li#arrayorder_2{:style => "display: none;"}
+          %a.nav-top-item.submenuheader{:href => "#"} Hình ảnh
+          .submenu
+            %ul
+              %li
+                %a{:href => "#"} Album ảnh
+              %li
+                %a{:href => "#"} Danh sách ảnh
+        %li#arrayorder_8{:style => "display: none;"}
+          %a.nav-top-item{:href => "#"} Đối tác
+        %li#arrayorder_8{:style => "display: none;"}
+          %a.nav-top-item{:href => "#"} Quản lý đơn hàng
+        %li#arrayorder_7{:style => "display: none;"}
+          %a.nav-top-item{:href => "#"} Quản lý quảng cáo 2 bên
+        %li#arrayorder_8{:style => "display: none;"}
+          %a.nav-top-item{:href => "#"} Quản lý quảng cáo
+        %li#arrayorder_8{:style => "display: none;"}
+          %a.nav-top-item{:href => "#"} Quản lý hỗ trợ trực tuyến
+        %li#arrayorder_11
+          %a.nav-top-item{:href => "#"} Quản lý giới thiệu
+        %li#arrayorder_4
+          %a.nav-top-item{:href => "#"} Cấu hình
+        %li#arrayorder_2
+          %a.nav-top-item.submenuheader{:href => "#"} Quản lý tài khoản
+          .submenu
+            %ul
+              %li
+                %a{:href => "#"} Tài khoản admin
+              %li
+                %a{:href => "#"} Tài khoản đăng ký
+        %li#arrayorder_7
+          %a.nav-top-item{:href => "#"} Quản lý popup
+        %li#arrayorder_2{:style => ""}
+          %a.nav-top-item.submenuheader{:href => "#"} Quản lý slideshow
+          .submenu
+            %ul
+              %li
+                %a{:href => "h#"} Quản lý slideshow
+        %li#arrayorder_7
+          %a.nav-top-item{:href => "#s"} Quản lý Banner
+        %li#arrayorder_8{:style => ""}
+          %a.nav-top-item{:href => "#"} Quản lý video
+        %li#arrayorder_8
