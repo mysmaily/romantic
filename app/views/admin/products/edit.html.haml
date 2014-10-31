@@ -1,0 +1,6 @@
+#main-content
+  = render 'admin/top', :page_title => t("admin.manage_product_category"), href: ''
+  .content-box
+    = form_for(@product, url: admin_product_path(@product), :html => {:multipart => true})  do |f|
+      = render 'form', title: t('admin.edit_product_category')
+  

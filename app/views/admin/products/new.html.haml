@@ -1,23 +1,5 @@
 #main-content
-  = render 'admin/top'
+  = render 'admin/top', :page_title => t("admin.manage_product_category"), href: ''
   .content-box
-    .content-box-header
-      %h3 Thêm danh mục cha
-      .clear
-    .content-box-content
-      #tab1.tab-content.default-tab
-        %table.input
-          %tbody
-            %tr
-              %td.label{:width => "120"} Tên Danh mục:
-              %td
-                %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name]", :onchange => "get_alias()", :type => "text"}/
-              %tr{:style => ""}
-                %td.label{:width => "120"} Tên Danh mục (Tiếng Anh):
-                %td
-                  %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name_eg]", :onchange => "get_alias()", :type => "text"}/
-                %tr{:style => ""}
-                  %td.label{:width => "120"} Tên Danh mục (Tiếng Trung):
-                  %td
-                    %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name_chi]", :onchange => "get_alias()", :type => "text"}/
-                
+    = form_for(@product, url: admin_products_path(@product), :html => {:multipart => true})  do |f|
+      = render 'form', title: t('admin.add_product_category')

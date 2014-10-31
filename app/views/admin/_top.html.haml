@@ -2,16 +2,20 @@
   #main
     #toolbar.toolbar-list
       %ul
-        %li#toolbar-new
+        - if !href.blank?
+          %li#toolbar-new
+            %a.toolbar{:href => href}
+              %span.icon-32-new
+              Thêm mới
         %li.divider
         %li#toolbar-help
-          %a.toolbar{:href => "#messages", :rel => "modal"}
+          %a.toolbar{:href => "?lang=vn"}
             %span.icon-32-help
-            Trợ giúp
+            #{t('vietnam')}
         %li#toolbar-unpublish
-          %a.toolbar{:href => "/admin"}
+          %a.toolbar{:href => "?lang=en"}
             %span.icon-32-unpublish
-            Đóng
+            #{t('english')}
       .clr
     .pagetitle.icon-48-nhomtin
       %h2 

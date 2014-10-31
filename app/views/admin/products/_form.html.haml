@@ -1,0 +1,58 @@
+.content-box-header
+  %h3 Thêm mới sản phẩm
+  .clear
+.content-box-content
+  #tab1.tab-content.default-tab
+    %table.input
+      %tbody
+        %tr
+          %td.label{:width => "120"} Tên sản phẩm:
+          %td
+            %label{:for => "idtitle"}
+            %input#idtitle.text-input.medium-input{:name => "product[title]", value: @product.try(:title), :type => "text"}/
+          %tr{:style => ""}
+            %td.label{:width => "120"} Tên sản phẩm (Tieng Viet):
+            %td
+              %label{:for => "idtitle"}
+              %input#idtitle.text-input.medium-input{:name => "product[title_vn]", value: @product.try(:title_vn), :type => "text"}/
+          %tr
+            %td.label Thuộc danh mục:
+            %td
+              = select_tag :product, options_for_select(@categories), name: "product[category_id]"
+          %tr
+            %td.label Avatar:
+            %td
+              %input.medium-input{type: 'file', name: 'product[image]'}
+          %tr
+            %td.label Price:
+            %td
+              %input.text-input.medium-input{type: 'number', name: 'product[price]', value: @product.try(:price)}
+          %tr
+            %td.label Percent Sale:
+            %td
+              %input.text-input.medium-input{type: 'number', name: 'product[percent_sale]', value: @product.try(:percent_sale)}
+          %tr
+            %td.label Description:
+            %td
+              %textarea{name: 'product[description]', rows: "6"}
+                = @product.try(:description)
+          %tr
+            %td.label Trang thái:
+            %td
+              %select{name: 'product[publish]'}
+                %option{value: 'yes'} Yes
+                %option{value: 'no'} No
+#khung{:style => "border: none;"}
+  #main
+    #toolbar.toolbar-list
+      %ul
+        %li#toolbar-new
+          %a.toolbar
+            %span.icon-32-save
+            %input{name: 'commit', type: 'submit', value: 'Luu'}
+        %li#toolbar-unpublish
+          %a.toolbar{:href => "/admin"}
+            %span.icon-32-cancel
+            Hủy
+      .clr
+    .clr   

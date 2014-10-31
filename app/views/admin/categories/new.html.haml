@@ -1,5 +1,5 @@
 #main-content
-  = render 'admin/top', :page_title => t("admin.manage_product_category")
+  = render 'admin/top', :page_title => t("admin.manage_product_category"), href: ''
   .content-box
     = form_for(@category, url: admin_categories_path(@category))  do |f|
       = render 'form', title: t('admin.add_product_category')

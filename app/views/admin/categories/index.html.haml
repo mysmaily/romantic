@@ -1,5 +1,5 @@
 #main-content
-  = render 'admin/top', :page_title => t("admin.manage_product_category")
+  = render 'admin/top', :page_title => t("admin.manage_product_category"), href: new_admin_category_path
   .content-box
     .content-box-header
       %table.timkiem
@@ -44,7 +44,7 @@
                 %td
                   = link_to edit_admin_category_path(t.id) do
                     = image_tag "/assets/pencil.png"
-                  = link_to admin_delete_category_path(t.id), method: :delete do
+                  = link_to admin_delete_category_path(t.id) do
                     = image_tag "/assets/cross.png"
                 %td
                   = check_box_tag :published, t.id, t.published?, class: 'user-approve-cb'
