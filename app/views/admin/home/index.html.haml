@@ -1,2 +1,10 @@
 #main-content
-  = "Em di xa qus"
+  = render 'admin/top', :page_title => t("admin.home")
+  .content-box
+    .content-box-header
+      %h3 
+        = "My Sites"
+      .clear
+    .content-box-content
+      #tab1.tab-content.default-tab
+        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "500", :src => "//www.youtube.com/embed/003LPzYwSNc", :width => "870"}

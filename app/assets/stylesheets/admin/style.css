@@ -827,13 +827,13 @@ div.pagetitle h2 {
 }
 /******************** Icon ***********************/
 .icon-32-new {
-    background-image: url(/assets/icons/icon-32-new.png);
+    background-image: url("/assets/icon-32-new.png");
 }
 .icon-32-edit {
-    background-image: url(/assets/icons/icon-32-edit.png);
+    background-image: url("/assets/icon-32-edit.png");
 }
 .icon-32-trash {
-    background-image: url(/assets/icons/icon-32-trash.png);
+    background-image: url("/assets/icon-32-trash.png");
 }
 .icon-32-help {
     background-image: url("/assets/icon-32-help.png");
@@ -842,19 +842,19 @@ div.pagetitle h2 {
     background-image: url("/assets/icon-32-unpublish.png");
 }
 .icon-32-cancel {
-    background-image: url(/assets/icons/icon-32-cancel.png);
+    background-image: url("/assets/icon-32-cancel.png");
 }
 .icon-32-save {
-    background-image: url(/assets/icons/icon-32-save.png);
+    background-image: url("/assets/icon-32-save.png");
 }
 .icon-48-nhomtin {
     background-image: url("/assets/icon-48-category.png");
 }
 .icon-48-category-add {
-    background-image: url(/assets/icons/icon-48-category-add.png);
+    background-image: url("/assets/icon-48-category-add.png");
 }
 .icon-32-refresh {
-    background-image: url(/assets/icons/icon-32-refresh.png);
+    background-image: url("/assets/icon-32-refresh.png");
 }
 /*************** jQuery WYSIWYG ***************/
 

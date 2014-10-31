@@ -6,5 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 10.times do 
-  Category.create!(:name => Settings.category.name.sample, :name_vn => Settings.category.name_vn.sample)
+  Category.create!(:name => Settings.category.name.sample, :name_vn => Settings.category.name_vn.sample, :update_at => Time.now, :created_at => Time.now)
 end

@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20141029114654) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.datetime "update_at"
+    t.datetime "created_at"
     t.string   "name_vn"
     t.boolean  "published",  :default => true
   end

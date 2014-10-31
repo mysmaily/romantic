@@ -7,14 +7,24 @@
     %table.input
       %tbody
         %tr
-          %td.label{:width => "120"} Tên Danh mục:
+          %td.label{for: 'category_name', :width => "120"} Tên Danh mục:
           %td
-            %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name]", :onchange => "get_alias()", :type => "text"}/
-          %tr{:style => ""}
-            %td.label{:width => "120"} Tên Danh mục (Tiếng Anh):
-            %td
-              %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name_eg]", :onchange => "get_alias()", :type => "text"}/
-            %tr{:style => ""}
-              %td.label{:width => "120"} Tên Danh mục (Tiếng Trung):
-              %td
-                %input#idtitle.text-input.medium-input{:maxlength => "250", :name => "data[Catproduct][name_chi]", :onchange => "get_alias()", :type => "text"}/
+            %input#category_name.text-input.medium-input{:name => "category[name]", :type => "text", value: @category.try(:name)}/
+        %tr
+          %td.label{for: 'category_name_vn', :width => "120"} Tên Danh mục (Tiếng Anh):
+          %td
+            %input#category_name_vn.text-input.medium-input{id: 'category_name', :name => "category[name_vn]", value: @category.try(:name_vn), :type => "text"}/
+#khung{:style => "border: none;"}
+  #main
+    #toolbar.toolbar-list
+      %ul
+        %li#toolbar-new
+          %a.toolbar
+            %span.icon-32-save
+            %input{name: 'commit', type: 'submit', value: 'Luu'}
+        %li#toolbar-unpublish
+          %a.toolbar{:href => "/admin"}
+            %span.icon-32-cancel
+            Hủy
+      .clr
+    .clr   

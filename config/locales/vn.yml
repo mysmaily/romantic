@@ -21,6 +21,7 @@ vn:
     remember_me: "Ghi nhớ"
     min_character: "Ký tự tối thiểu"
   admin:
+    product_categories: "Danh muc san pham"
     home: "Trang Chủ"
     manage_product: "Quản lý sản phẩm"
     product_list: "Danh mục sản phẩm"

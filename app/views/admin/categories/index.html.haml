@@ -9,7 +9,8 @@
             %td
               %input{:type => "text"}
             %td
-              %input.button{:type => "button", :value => "Thêm mới"}/
+              %a{href: new_admin_category_path }
+                %input.button{:type => "button", :value => "Thêm mới"}/
       %ul.content-box-tabs
         %li
           %a.default-tab{:href => "#tab1"} Danh sách tin
@@ -21,8 +22,7 @@
         %table
           %thead
             %tr
-              %th{:width => "7%"} STT
-              %th{:width => "7%"}
+              %th{:width => "7%", :style => "text-align: center"} STT
               %th Tên danh mục
               %th Cập nhật
               %th{:width => "12%"} Xử lý
@@ -35,13 +35,12 @@
           - @categories.each do |t|
             %tbody
               %tr
-                %td
+                %td{:style => "text-align: center"}
                   = "#{i}"
-                %td
                 %td 
                   = t.name
                 %td
-                  = t.created_at
+                  = t.update_at
                 %td
                   = link_to edit_admin_category_path(t.id) do
                     = image_tag "/assets/pencil.png"
@@ -58,6 +57,9 @@
                 url: '/admin' + '/categories/' + this.value + '/set_published',
                 type: 'PUT',
                 data: { published: $(this).is(":checked") },
+                headers: {
+                'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+                },
                 success: function() {
                 return ;
                 }

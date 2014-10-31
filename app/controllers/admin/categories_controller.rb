@@ -5,10 +5,11 @@ class Admin::CategoriesController < AdminController
   end
 
   def new
+    @category = Category.new
   end
 
   def create
-    @category = Category.new
+    @category = Category.new(:name => params[:category][:name], name_vn: params[:category][:name_vn], update_at: Time.now, created_at: Time.now)
     if @category.save!
       redirect_to admin_categories_path
     else
@@ -21,6 +22,10 @@ class Admin::CategoriesController < AdminController
   end
 
   def update
+    @category = Category.find(params[:id])
+    @category.update_attributes(:name => params[:category][:name], :name_vn => params[:category][:name_vn], update_at: Time.now)
+
+    redirect_to admin_categories_path
   end
 
   def delete_category

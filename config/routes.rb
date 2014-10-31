@@ -14,6 +14,7 @@ Romantic::Application.routes.draw do
       put :set_published, on: :member
     end
     match "category/delete_product/:id", to: "categories#delete_category", as: "delete_category"
+    match "category/new", to: "categories#new", as: "new_category"
   end
 
 
