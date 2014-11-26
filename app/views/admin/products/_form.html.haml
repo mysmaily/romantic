@@ -22,6 +22,9 @@
           %tr
             %td.label Avatar:
             %td
+              - if @product.image.present?
+                = image_tag @product.image.url, width: "100"
+              %br
               %input.medium-input{type: 'file', name: 'product[image]'}
           %tr
             %td.label Price:
@@ -42,6 +45,19 @@
               %select{name: 'product[publish]'}
                 %option{value: 'yes'} Yes
                 %option{value: 'no'} No
+          %tr
+            %td.label Add photos:
+            %td
+              - if @product.photos.exists?
+                - @product.photos.each do |photo|
+                  = link_to admin_delete_image_path(photo) do
+                    = image_tag photo.photo.url, width: "100"
+              %br
+              = fields_for :photos do |p|
+                - if @product.photos.exists?
+                  = p.file_field :photo, :multiple => true, name: "photos[photo][]"
+                - else
+                  = p.file_field :photo, :multiple => true, name: "photos[photo][]", required: true
 #khung{:style => "border: none;"}
   #main
     #toolbar.toolbar-list

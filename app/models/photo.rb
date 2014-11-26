@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  attr_accessible :photo
+  attr_accessible :photo, :product_id
 
   has_attached_file :photo, :style => {:lager => "500x300#"}
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/

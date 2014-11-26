@@ -66,7 +66,10 @@
                   = image_tag "/assets/pencil.png", title: 'Edit'
                 = link_to admin_delete_product_path(t) do
                   = image_tag "/assets/cross.png", title: 'Delete'
-                %a.icon-4.info-tooltip{:href => "http://longphung.vn/admin/products/close/45", :title => "Đóng"}
-                  %img{:alt => "Ngắt kích hoạt", :src => "http://longphung.vn/admin/images/icons/success-icon.png"}/
+                = link_to admin_update_publish_path(t) do
+                  - if t.publish == 'yes'
+                    = image_tag "http://longphung.vn/admin/images/icons/success-icon.png"
+                  - else
+                    = image_tag "http://longphung.vn/admin/images/icons/Play-icon.png"
               %td{:align => "right"} 
                 = t.id

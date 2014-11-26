@@ -16,6 +16,8 @@ Romantic::Application.routes.draw do
     match "category/delete_product/:id", to: "categories#delete_category", as: "delete_category"
     match "products/delete_product/:id", to: "products#delete_product", as: "delete_product"
     match "category/new", to: "categories#new", as: "new_category"
+    match "products/update_publish/:id", to: "products#update_publish", as: "update_publish"
+    match "products/delete_image/:id", to: "products#delete_image", as: "delete_image"
   end
 
 

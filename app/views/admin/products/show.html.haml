@@ -9,41 +9,42 @@
         %table.input
           %tbody
             %tr
-              %td.label{:width => "120"} Tên sản phẩm:
+              %td{:width => "410", rowspan: "8"}
+                = image_tag @product.image.url, width: "400px", style: "border: 1px solid #001100"
+              %td.label{:width => "120", :style => "text-align: left;"} Tên tieng Anh:
               %td
-                %label{:for => "idtitle"}
-                #idtitle.text-input.medium-input
-                  = @product.try(:title)
-              %tr{:style => ""}
-                %td.label{:width => "120"} Tên sản phẩm (Tieng Viet):
-                %td
-                  %label{:for => "idtitle"}
-                  #idtitle.text-input.medium-input
-                    = @product.try(:title_vn)
+                = @product.try(:title)
               %tr
-                %td.label Thuộc danh mục:
+                %td.label{:style => "text-align: left;"} Tên tieng Viet:
+                %td
+                  = @product.try(:title_vn)
+              %tr
+                %td.label{:style => "text-align: left;"} Danh mục:
                 %td
                   = Category.where(id: @product.category_id).first.name
               %tr
-                %td.label Avatar:
-                %td.medium-input
-                  = image_tag @product.image.url(:admin)
-              %tr
-                %td.label Price:
+                %td.label{:style => "text-align: left;"} Price:
                 %td.medium-input
                   = @product.try(:price)
               %tr
-                %td.label Percent Sale:
+                %td.label{:style => "text-align: left;"} Percent Sale:
                 %td.medium-input
                   = @product.try(:percent_sale)
               %tr
-                %td.label Description:
+                %td.label{:style => "text-align: left;"} Description:
                 %td.medium-input
                   = @product.try(:description)
               %tr
-                %td.label Xuất bản:
+                %td.label{:style => "text-align: left;"} Xuất bản:
                 %td
                   = @product.try(:publish)
+              %tr
+                %td
+                %td
+              %tr
+                %td{colspan: "3", style: "text-align: center"}
+                  - @photos.each do |p|
+                    = image_tag p.photo.url, width: "700px"
     #khung{:style => "border: none;"}
       #main
         #toolbar.toolbar-list
